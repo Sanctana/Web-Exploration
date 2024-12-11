@@ -1,2 +1,4 @@
-# my.html_progress
-A collection of practice files documenting my journey learning HTML.
+# my.html_journey
+This space is dedicated to documenting my journey as I learn HTML.
+
+you'll find: practice files, exercises, and projects :)
