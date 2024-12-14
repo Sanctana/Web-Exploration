@@ -1,4 +1,4 @@
-# my.html_journey
+# all about html
 This space is dedicated to documenting my journey as I learn HTML.
 
-you'll find: practice files, exercises, and projects :)
+practice files, exercises, and projects 
