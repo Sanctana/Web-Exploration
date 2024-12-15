@@ -1,0 +1,76 @@
+body { /*  all content sa webpage. */
+  font-family:Arial;  /* font family not font style, kay ang font style kato man tong italic, normal, oblique
+                        nya sa font family dinhi natong mga Arial, Georgia, Time Roman*/
+  height: 100vh; /*allows me to design sections from my webpage that take up the entire vertical 
+                  space of the viewport (the visible area of a webpage that a user can see without scrolling),
+                  responsive pud siya */
+  display: flex;
+  padding: 0;
+  margin: 0; /*gizero nako ang padding ug margin para ma occupy ang kanang whole jud sa webpage, 
+                esp na naa koy colors solid, if magbutang kog margin and padding kay naa siyay whitespace each sides 
+                which is bati */
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header { 
+  background-color: #d7f266;
+  color: black;
+  padding: 1.25rem 0px 0.625rem 1.25rem; /*top right bottom left*/
+}
+
+/*practice using rem instead of px, kay it create more flexible and responsive layouts man, dayon it 
+ensuring designs look good on various devices without sacrificing consistency.
+
+bale, 1rem = 16px, so if 20px, 20/16 = 1.25rem */
+
+header > p {
+  margin-top: -15px; /* the selector(parent) kay the declaration block will only apply to "that" certain child (target) */
+} /* ">" is called child combinator */
+/* -15px kay para mas close siya sa header 1 gali dili kaayo kanang lagyo tan awn*/
+
+h1{
+  font-family: Georgia;
+  font-size: 2.5em; /* mas gi double nako ang size sa header to 2.5x para mas ma emphasize siya 
+                    kay ga header pud kos main "em" ang i-use for double size sa header*/
+}
+
+main { 
+  background-color: #f7f8f6;
+  padding: 2.5rem 1.3rem 1rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.tria{
+  margin-top: 3px;
+  line-height: 1.3;
+}
+
+ 
+main > h2{
+  margin-top: 0px; 
+}
+
+footer {
+  background-color: #151514;
+  color: #f7f8f6;
+  height: 30%;
+  margin-top: 0;
+  display: flex;
+  align-items: center; /* nigamit ko ani para macenter ang copyright */
+}
+
+footer > a{
+  flex: 1; /* Allows copyright to be in the left section */
+  padding: 1.25rem;
+  text-align: left; /* Aligns copyright text to the left, niya sa taas naay align center, 
+                     so ang copyright naas left-side center */
+}
+
+footer > ul{
+  text-align: right; /* same rapud sa taas, pero kani right-side center */
+  margin-right: 1.25rem;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+}
