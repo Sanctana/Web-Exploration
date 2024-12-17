@@ -1,1 +1,99 @@
+<!-- December 17, 2024 -->
+<!-- to practice simple selectors and text properties -->
+<!-- using two of the ways on how to insert a style sheet in CSS: Inline and Internal CSS -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="en">
+        <title>Simple Selectors</title>
+        <style>
+            body{
+                text-size-adjust: 100%; /* this property is not necessary pero good practice ni siya when making website
+                                        "why?" alangan mo ensure siya na ang text readable gihapon when users zoom in
+                                        or adjust their font size especially if gi anticipate nako akoa users na mga
+                                        naay accessibility needs, older users, or users with visual impairments
+                                        
+                                        responsive pud siya sa other devices sa tablets, smartphones, then if magbutang ko ug
+                                        text-size-adjust kay mo prevent siya sa text from becoming too small 
+                                        or too large when viewed on different screens*/
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: justify;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                }
 
+            h2{ /* Element Selector (Single) */ 
+                text-align: center; /*ga text align justify kos body then ga text align center ko dinhi, sa browser,
+                                    ang iyaha "mas" iprioritize ang specific rule for that cetain element 
+                                    kaysa general rule(body), mao mas moovertake ang gibutang nimos specific*/
+            }
+            
+            h1, h3{ /* this is what we called Element Selector also but Grouping (h1, h3)*/
+                font-family: 'Times New Roman', Times, serif;
+                text-align: center;
+                margin-bottom: -0.5rem;
+            }
+
+            h3{
+                font-size: 1.5em;
+                margin-top: 2rem;
+            }
+            #formainh{ /* used ID Selector, once rani siya ma gamit, 1 id selector for 1 element only
+                            and if u use it man to other noh, pwede siya, pero katong pinakalastsan na gigamitan
+                            nimo ani na selector ra mo apply, so if 5 kabuok ako gibutangan ug id="formainh",
+                            katong ika 5th ra siya mo apply, the rest na nauna kay di siya mo modified*/
+                font-size: 3em;
+            }
+
+            .tria{
+                font-size: 1.2em;
+                text-indent: 3rem;
+                line-height: 1.2;
+            }
+
+            .saint{
+                font-size: 1em;
+            }
+            
+            footer{
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+    <header>
+        <h1 id="formainh">Simple Selectors Practice</h1>
+        <h2 style="font-style: italic; margin-top: 0.5rem; font-weight: 400;">Learning CSS Selectors Effectively</h2>
+    </header>
+
+    <main>
+        <div class="tria">
+            <p><b><i>Welcome to our Simple Selectors practice page!</i></b> This Website is designed to help you understand how to effectively 
+                use different CSS selectors to style HTML elements. Through a series of examples and exercises, you'll learn how to
+                apply elements selectors, class selectors, ID selectors, attribute selectors, and pseudo-class selectors in various 
+                scenarios.</p>
+            <p>In this section, we will explore how these selectors can be used to target specific elements on a webpage and apply styles such as color,
+                font, layout, and more. You will see how these selectors interact with your HTML structure to create dynamic and responsive designs. 
+                By the end of this practice, you'll be comfortable using simple selectors to make your webpages visually appealing and functional.</p>
+        </div>
+
+        <div class="saint">
+            <h3>Premium Service</h3>
+            <p style="text-align: center;">Get the best features with our premium service package. Enjoy exclusive access to premium features and personalized support to enhance your 
+                experience.</p>
+
+            <h3>Basic Service</h3>
+            <p style="text-align: center;"">Our basic service includes the essential features you need. Perfect for those who are looking for straightforward solutions without extra frills.</p>
+        
+            <h4 style="margin-bottom: -0.7rem; margin-top: 2.5rem;">Contact Us</h4>
+            <p style="margin-bottom: -0.5rem; font-style: italic;">For further assistance or inquiries, please don't hesitate to reach out to our customer support team.</p>
+            <p>Our customer support team is available 24/7 to assist you with any questions or issues you may have. We are here to help!</p>
+        </div>
+    </main>
+
+    <footer>
+        <p style="margin-top: 2.5rem;">© 2024 Simple Selectors Practice. All rights reserved.</p>
+    </footer>
+    </body>
+</html>
