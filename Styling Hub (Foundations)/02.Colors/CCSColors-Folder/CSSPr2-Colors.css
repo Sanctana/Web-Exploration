@@ -17,13 +17,6 @@ header, footer, .hello{
     font-family: 'Times New Roman', Times, serif;
 }
 
-.hi{
-    margin-bottom: -1rem; 
-    margin-top: 2rem;
-    font-size: 2em; 
-    text-decoration: underline; 
-}
-
 .ilove{
     outline-style: 1px solid;
     outline-color: #FFE44B;
